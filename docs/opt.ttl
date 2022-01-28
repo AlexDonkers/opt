@@ -1,0 +1,313 @@
+@prefix : <http://alexdonkers.github.io/opt#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://alexdonkers.github.io/opt#> .
+
+<http://alexdonkers.github.io/opt#> rdf:type owl:Ontology ;
+                                     <http://purl.org/dc/terms/creator> "Alex Donkers"@en ,
+                                                                        """OPT is a modular extension of the ofo:Property class, described in the Occupant Feedback Ontoloty (https://w3id.org/ofo#). OPT can be used for specific use-cases related to indoor environmental comfort.
+
+The author welcomes extensions of OPT."""@en ,
+                                                                        "Occupant Property Taxonomy"@en ;
+                                     <http://purl.org/vocab/vann/preferredNamespacePrefix> "opt"@en ;
+                                     <http://purl.org/vocab/vann/prefferedNamespaceURI> "https://alexdonkers.github.io/opt#"@en ;
+                                     rdfs:label "Occupant Property Taxonomy"@en ;
+                                     owl:versionInfo "0.1"@en .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/prefferedNamespaceURI
+<http://purl.org/vocab/vann/prefferedNamespaceURI> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://alexdonkers.github.io/opt#hasAge
+:hasAge rdf:type owl:DatatypeProperty ;
+        rdfs:subPropertyOf <https://w3id.org/ofo#hasSimpleProperty> .
+
+
+###  http://alexdonkers.github.io/opt#hasGender
+:hasGender rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf <https://w3id.org/ofo#hasSimpleProperty> .
+
+
+###  http://alexdonkers.github.io/opt#hasHeight
+:hasHeight rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf <https://w3id.org/ofo#hasSimpleProperty> .
+
+
+###  http://alexdonkers.github.io/opt#hasName
+:hasName rdf:type owl:DatatypeProperty ;
+         rdfs:subPropertyOf <https://w3id.org/ofo#hasSimpleProperty> .
+
+
+###  http://alexdonkers.github.io/opt#hasWeight
+:hasWeight rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf <https://w3id.org/ofo#hasSimpleProperty> .
+
+
+###  https://w3id.org/ofo#hasSimpleProperty
+<https://w3id.org/ofo#hasSimpleProperty> rdf:type owl:DatatypeProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://alexdonkers.github.io/opt#AcousticComfort
+:AcousticComfort rdf:type owl:Class ;
+                 rdfs:subClassOf :Comfort ;
+                 rdfs:label "Acoustic comfort"@en .
+
+
+###  http://alexdonkers.github.io/opt#AcousticPrivacy
+:AcousticPrivacy rdf:type owl:Class ;
+                 rdfs:subClassOf :AmbientProperty ;
+                 rdfs:label "Acoustic privacy"@en .
+
+
+###  http://alexdonkers.github.io/opt#ActivityLevel
+:ActivityLevel rdf:type owl:Class ;
+               rdfs:subClassOf :PersonalProperty ;
+               rdfs:label "Activity level"@en .
+
+
+###  http://alexdonkers.github.io/opt#AirFlow
+:AirFlow rdf:type owl:Class ;
+         rdfs:subClassOf :AmbientProperty ;
+         rdfs:label "Air flow"@en .
+
+
+###  http://alexdonkers.github.io/opt#AirQualityComfort
+:AirQualityComfort rdf:type owl:Class ;
+                   rdfs:subClassOf :Comfort ;
+                   rdfs:label "Air quality comfort"@en .
+
+
+###  http://alexdonkers.github.io/opt#AmbientProperty
+:AmbientProperty rdf:type owl:Class ;
+                 rdfs:subClassOf <https://w3id.org/ofo#Property> ;
+                 rdfs:label "Ambient property"@en .
+
+
+###  http://alexdonkers.github.io/opt#BreathingRate
+:BreathingRate rdf:type owl:Class ;
+               rdfs:subClassOf :PersonalProperty ;
+               rdfs:label "Breathing rate"@en .
+
+
+###  http://alexdonkers.github.io/opt#Brightness
+:Brightness rdf:type owl:Class ;
+            rdfs:subClassOf :AmbientProperty ;
+            rdfs:label "Brightness"@en .
+
+
+###  http://alexdonkers.github.io/opt#Comfort
+:Comfort rdf:type owl:Class ;
+         rdfs:subClassOf <https://w3id.org/ofo#Property> ;
+         rdfs:label "Comfort"@en .
+
+
+###  http://alexdonkers.github.io/opt#Echo
+:Echo rdf:type owl:Class ;
+      rdfs:subClassOf :AmbientProperty ;
+      rdfs:label "Echo"@en .
+
+
+###  http://alexdonkers.github.io/opt#FreshAirAmount
+:FreshAirAmount rdf:type owl:Class ;
+                rdfs:subClassOf :AmbientProperty ;
+                rdfs:label "Fresh air amount"@en .
+
+
+###  http://alexdonkers.github.io/opt#Glare
+:Glare rdf:type owl:Class ;
+       rdfs:subClassOf :AmbientProperty ;
+       rdfs:label "Glare"@en .
+
+
+###  http://alexdonkers.github.io/opt#HeartRate
+:HeartRate rdf:type owl:Class ;
+           rdfs:subClassOf :PersonalProperty ;
+           rdfs:label "heart rate"@en .
+
+
+###  http://alexdonkers.github.io/opt#MetabolicRate
+:MetabolicRate rdf:type owl:Class ;
+               rdfs:subClassOf :PersonalProperty ;
+               rdfs:label "Metabolic rate"@en .
+
+
+###  http://alexdonkers.github.io/opt#NaturalVentilation
+:NaturalVentilation rdf:type owl:Class ;
+                    rdfs:subClassOf :AmbientProperty ;
+                    rdfs:label "Natural ventilation"@en .
+
+
+###  http://alexdonkers.github.io/opt#NoiseLevel
+:NoiseLevel rdf:type owl:Class ;
+            rdfs:subClassOf :AmbientProperty ;
+            rdfs:label "Noise level"@en .
+
+
+###  http://alexdonkers.github.io/opt#Odor
+:Odor rdf:type owl:Class ;
+      rdfs:subClassOf :AmbientProperty ;
+      rdfs:label "Odor"@en .
+
+
+###  http://alexdonkers.github.io/opt#OxygenSaturation
+:OxygenSaturation rdf:type owl:Class ;
+                  rdfs:subClassOf :PersonalProperty ;
+                  rdfs:label "Oxygen saturation"@en .
+
+
+###  http://alexdonkers.github.io/opt#PersonalProperty
+:PersonalProperty rdf:type owl:Class ;
+                  rdfs:subClassOf <https://w3id.org/ofo#Property> ;
+                  rdfs:label "Personal property"@en .
+
+
+###  http://alexdonkers.github.io/opt#RadientTemperature
+:RadientTemperature rdf:type owl:Class ;
+                    rdfs:subClassOf :Temperature ;
+                    rdfs:label "Radient temperature"@en .
+
+
+###  http://alexdonkers.github.io/opt#Reflection
+:Reflection rdf:type owl:Class ;
+            rdfs:subClassOf :AmbientProperty ;
+            rdfs:label "Reflection"@en .
+
+
+###  http://alexdonkers.github.io/opt#RelativeHumidity
+:RelativeHumidity rdf:type owl:Class ;
+                  rdfs:subClassOf :AmbientProperty ;
+                  rdfs:label "Relative humidity"@en .
+
+
+###  http://alexdonkers.github.io/opt#SkinTemperature
+:SkinTemperature rdf:type owl:Class ;
+                 rdfs:subClassOf :PersonalProperty ;
+                 rdfs:label "Skin temperature"@en .
+
+
+###  http://alexdonkers.github.io/opt#SleepScore
+:SleepScore rdf:type owl:Class ;
+            rdfs:subClassOf :PersonalProperty ;
+            rdfs:label "Sleep score"@en .
+
+
+###  http://alexdonkers.github.io/opt#SleepStage
+:SleepStage rdf:type owl:Class ;
+            rdfs:subClassOf :PersonalProperty ;
+            rdfs:label "Sleep stage"@en .
+
+
+###  http://alexdonkers.github.io/opt#Temperature
+:Temperature rdf:type owl:Class ;
+             rdfs:subClassOf :AmbientProperty ;
+             rdfs:label "Temperature"@en .
+
+
+###  http://alexdonkers.github.io/opt#TemperatureVariation
+:TemperatureVariation rdf:type owl:Class ;
+                      rdfs:subClassOf :AmbientProperty ;
+                      rdfs:label "Temperature variation"@en .
+
+
+###  http://alexdonkers.github.io/opt#ThermalComfort
+:ThermalComfort rdf:type owl:Class ;
+                rdfs:subClassOf :Comfort ;
+                rdfs:label "Thermal comfort"@en .
+
+
+###  http://alexdonkers.github.io/opt#View
+:View rdf:type owl:Class ;
+      rdfs:subClassOf :AmbientProperty ;
+      rdfs:label "View"@en .
+
+
+###  http://alexdonkers.github.io/opt#VisualComfort
+:VisualComfort rdf:type owl:Class ;
+               rdfs:subClassOf :Comfort ;
+               rdfs:label "Visual comfort"@en .
+
+
+###  http://alexdonkers.github.io/opt#VisualPrivacy
+:VisualPrivacy rdf:type owl:Class ;
+               rdfs:subClassOf :AmbientProperty ;
+               rdfs:label "Visual privacy"@en .
+
+
+###  http://alexdonkers.github.io/opt#Weight
+:Weight rdf:type owl:Class ;
+        rdfs:subClassOf :PersonalProperty ;
+        rdfs:label "Weight"@en .
+
+
+###  https://w3id.org/ofo#Property
+<https://w3id.org/ofo#Property> rdf:type owl:Class .
+
+
+###  https://w3id.org/ofo#PropertySet
+<https://w3id.org/ofo#PropertySet> rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://alexdonkers.github.io/opt#AcousticComfortPropertySet
+:AcousticComfortPropertySet rdf:type owl:NamedIndividual ,
+                                     <https://w3id.org/ofo#PropertySet> ;
+                            rdfs:comment "A property set that can be used to group properties related to acoustic comfort."@en ;
+                            rdfs:label "Acoustic comfort property set"@en .
+
+
+###  http://alexdonkers.github.io/opt#AirQualityComfortPropertySet
+:AirQualityComfortPropertySet rdf:type owl:NamedIndividual ,
+                                       <https://w3id.org/ofo#PropertySet> ;
+                              rdfs:comment "A property set that can be used to group properties related to air quality comfort."@en ;
+                              rdfs:label "Air quality comfort property set"@en .
+
+
+###  http://alexdonkers.github.io/opt#ThermalComfortPropertySet
+:ThermalComfortPropertySet rdf:type owl:NamedIndividual ,
+                                    <https://w3id.org/ofo#PropertySet> ;
+                           rdfs:comment "A property set that can be used to group properties related to thermal comfort."@en ;
+                           rdfs:label "Thermal comfort property set"@en .
+
+
+###  http://alexdonkers.github.io/opt#VisualComfortPropertySet
+:VisualComfortPropertySet rdf:type owl:NamedIndividual ,
+                                   <https://w3id.org/ofo#PropertySet> ;
+                          rdfs:comment "A property set that can be used to group properties related to visual comfort."@en ;
+                          rdfs:label "Visual comfort property set"@en .
+
+
+###  Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/

@@ -1,0 +1,273 @@
+<http://alexdonkers.github.io/opt#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://alexdonkers.github.io/opt#> <http://purl.org/dc/terms/creator> "Alex Donkers"@en .
+<http://alexdonkers.github.io/opt#> <http://purl.org/dc/terms/creator> "OPT is a modular extension of the ofo:Property class, described in the Occupant Feedback Ontoloty (https://w3id.org/ofo#). OPT can be used for specific use-cases related to indoor environmental comfort.\n\nThe author welcomes extensions of OPT."@en .
+<http://alexdonkers.github.io/opt#> <http://purl.org/dc/terms/creator> "Occupant Property Taxonomy"@en .
+<http://alexdonkers.github.io/opt#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "opt"@en .
+<http://alexdonkers.github.io/opt#> <http://purl.org/vocab/vann/prefferedNamespaceURI> "https://alexdonkers.github.io/opt#"@en .
+<http://alexdonkers.github.io/opt#> <http://www.w3.org/2000/01/rdf-schema#label> "Occupant Property Taxonomy"@en .
+<http://alexdonkers.github.io/opt#> <http://www.w3.org/2002/07/owl#versionInfo> "0.1"@en .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/prefferedNamespaceURI
+<http://purl.org/vocab/vann/prefferedNamespaceURI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://alexdonkers.github.io/opt#hasAge
+<http://alexdonkers.github.io/opt#hasAge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://alexdonkers.github.io/opt#hasAge> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/ofo#hasSimpleProperty> .
+# 
+# http://alexdonkers.github.io/opt#hasGender
+<http://alexdonkers.github.io/opt#hasGender> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://alexdonkers.github.io/opt#hasGender> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/ofo#hasSimpleProperty> .
+# 
+# http://alexdonkers.github.io/opt#hasHeight
+<http://alexdonkers.github.io/opt#hasHeight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://alexdonkers.github.io/opt#hasHeight> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/ofo#hasSimpleProperty> .
+# 
+# http://alexdonkers.github.io/opt#hasName
+<http://alexdonkers.github.io/opt#hasName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://alexdonkers.github.io/opt#hasName> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/ofo#hasSimpleProperty> .
+# 
+# http://alexdonkers.github.io/opt#hasWeight
+<http://alexdonkers.github.io/opt#hasWeight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://alexdonkers.github.io/opt#hasWeight> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/ofo#hasSimpleProperty> .
+# 
+# https://w3id.org/ofo#hasSimpleProperty
+<https://w3id.org/ofo#hasSimpleProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://alexdonkers.github.io/opt#AcousticComfort
+<http://alexdonkers.github.io/opt#AcousticComfort> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://alexdonkers.github.io/opt#AcousticComfort> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://alexdonkers.github.io/opt#Comfort> .
+<http://alexdonkers.github.io/opt#AcousticComfort> <http://www.w3.org/2000/01/rdf-schema#label> "Acoustic comfort"@en .
+# 
+# http://alexdonkers.github.io/opt#AcousticPrivacy
+<http://alexdonkers.github.io/opt#AcousticPrivacy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://alexdonkers.github.io/opt#AcousticPrivacy> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://alexdonkers.github.io/opt#AmbientProperty> .
+<http://alexdonkers.github.io/opt#AcousticPrivacy> <http://www.w3.org/2000/01/rdf-schema#label> "Acoustic privacy"@en .
+# 
+# http://alexdonkers.github.io/opt#ActivityLevel
+<http://alexdonkers.github.io/opt#ActivityLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://alexdonkers.github.io/opt#ActivityLevel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://alexdonkers.github.io/opt#PersonalProperty> .
+<http://alexdonkers.github.io/opt#ActivityLevel> <http://www.w3.org/2000/01/rdf-schema#label> "Activity level"@en .
+# 
+# http://alexdonkers.github.io/opt#AirFlow
+<http://alexdonkers.github.io/opt#AirFlow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://alexdonkers.github.io/opt#AirFlow> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://alexdonkers.github.io/opt#AmbientProperty> .
+<http://alexdonkers.github.io/opt#AirFlow> <http://www.w3.org/2000/01/rdf-schema#label> "Air flow"@en .
+# 
+# http://alexdonkers.github.io/opt#AirQualityComfort
+<http://alexdonkers.github.io/opt#AirQualityComfort> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://alexdonkers.github.io/opt#AirQualityComfort> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://alexdonkers.github.io/opt#Comfort> .
+<http://alexdonkers.github.io/opt#AirQualityComfort> <http://www.w3.org/2000/01/rdf-schema#label> "Air quality comfort"@en .
+# 
+# http://alexdonkers.github.io/opt#AmbientProperty
+<http://alexdonkers.github.io/opt#AmbientProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://alexdonkers.github.io/opt#AmbientProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ofo#Property> .
+<http://alexdonkers.github.io/opt#AmbientProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Ambient property"@en .
+# 
+# http://alexdonkers.github.io/opt#BreathingRate
+<http://alexdonkers.github.io/opt#BreathingRate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://alexdonkers.github.io/opt#BreathingRate> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://alexdonkers.github.io/opt#PersonalProperty> .
+<http://alexdonkers.github.io/opt#BreathingRate> <http://www.w3.org/2000/01/rdf-schema#label> "Breathing rate"@en .
+# 
+# http://alexdonkers.github.io/opt#Brightness
+<http://alexdonkers.github.io/opt#Brightness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://alexdonkers.github.io/opt#Brightness> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://alexdonkers.github.io/opt#AmbientProperty> .
+<http://alexdonkers.github.io/opt#Brightness> <http://www.w3.org/2000/01/rdf-schema#label> "Brightness"@en .
+# 
+# http://alexdonkers.github.io/opt#Comfort
+<http://alexdonkers.github.io/opt#Comfort> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://alexdonkers.github.io/opt#Comfort> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ofo#Property> .
+<http://alexdonkers.github.io/opt#Comfort> <http://www.w3.org/2000/01/rdf-schema#label> "Comfort"@en .
+# 
+# http://alexdonkers.github.io/opt#Echo
+<http://alexdonkers.github.io/opt#Echo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://alexdonkers.github.io/opt#Echo> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://alexdonkers.github.io/opt#AmbientProperty> .
+<http://alexdonkers.github.io/opt#Echo> <http://www.w3.org/2000/01/rdf-schema#label> "Echo"@en .
+# 
+# http://alexdonkers.github.io/opt#FreshAirAmount
+<http://alexdonkers.github.io/opt#FreshAirAmount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://alexdonkers.github.io/opt#FreshAirAmount> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://alexdonkers.github.io/opt#AmbientProperty> .
+<http://alexdonkers.github.io/opt#FreshAirAmount> <http://www.w3.org/2000/01/rdf-schema#label> "Fresh air amount"@en .
+# 
+# http://alexdonkers.github.io/opt#Glare
+<http://alexdonkers.github.io/opt#Glare> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://alexdonkers.github.io/opt#Glare> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://alexdonkers.github.io/opt#AmbientProperty> .
+<http://alexdonkers.github.io/opt#Glare> <http://www.w3.org/2000/01/rdf-schema#label> "Glare"@en .
+# 
+# http://alexdonkers.github.io/opt#HeartRate
+<http://alexdonkers.github.io/opt#HeartRate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://alexdonkers.github.io/opt#HeartRate> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://alexdonkers.github.io/opt#PersonalProperty> .
+<http://alexdonkers.github.io/opt#HeartRate> <http://www.w3.org/2000/01/rdf-schema#label> "heart rate"@en .
+# 
+# http://alexdonkers.github.io/opt#MetabolicRate
+<http://alexdonkers.github.io/opt#MetabolicRate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://alexdonkers.github.io/opt#MetabolicRate> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://alexdonkers.github.io/opt#PersonalProperty> .
+<http://alexdonkers.github.io/opt#MetabolicRate> <http://www.w3.org/2000/01/rdf-schema#label> "Metabolic rate"@en .
+# 
+# http://alexdonkers.github.io/opt#NaturalVentilation
+<http://alexdonkers.github.io/opt#NaturalVentilation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://alexdonkers.github.io/opt#NaturalVentilation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://alexdonkers.github.io/opt#AmbientProperty> .
+<http://alexdonkers.github.io/opt#NaturalVentilation> <http://www.w3.org/2000/01/rdf-schema#label> "Natural ventilation"@en .
+# 
+# http://alexdonkers.github.io/opt#NoiseLevel
+<http://alexdonkers.github.io/opt#NoiseLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://alexdonkers.github.io/opt#NoiseLevel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://alexdonkers.github.io/opt#AmbientProperty> .
+<http://alexdonkers.github.io/opt#NoiseLevel> <http://www.w3.org/2000/01/rdf-schema#label> "Noise level"@en .
+# 
+# http://alexdonkers.github.io/opt#Odor
+<http://alexdonkers.github.io/opt#Odor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://alexdonkers.github.io/opt#Odor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://alexdonkers.github.io/opt#AmbientProperty> .
+<http://alexdonkers.github.io/opt#Odor> <http://www.w3.org/2000/01/rdf-schema#label> "Odor"@en .
+# 
+# http://alexdonkers.github.io/opt#OxygenSaturation
+<http://alexdonkers.github.io/opt#OxygenSaturation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://alexdonkers.github.io/opt#OxygenSaturation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://alexdonkers.github.io/opt#PersonalProperty> .
+<http://alexdonkers.github.io/opt#OxygenSaturation> <http://www.w3.org/2000/01/rdf-schema#label> "Oxygen saturation"@en .
+# 
+# http://alexdonkers.github.io/opt#PersonalProperty
+<http://alexdonkers.github.io/opt#PersonalProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://alexdonkers.github.io/opt#PersonalProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ofo#Property> .
+<http://alexdonkers.github.io/opt#PersonalProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Personal property"@en .
+# 
+# http://alexdonkers.github.io/opt#RadientTemperature
+<http://alexdonkers.github.io/opt#RadientTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://alexdonkers.github.io/opt#RadientTemperature> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://alexdonkers.github.io/opt#Temperature> .
+<http://alexdonkers.github.io/opt#RadientTemperature> <http://www.w3.org/2000/01/rdf-schema#label> "Radient temperature"@en .
+# 
+# http://alexdonkers.github.io/opt#Reflection
+<http://alexdonkers.github.io/opt#Reflection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://alexdonkers.github.io/opt#Reflection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://alexdonkers.github.io/opt#AmbientProperty> .
+<http://alexdonkers.github.io/opt#Reflection> <http://www.w3.org/2000/01/rdf-schema#label> "Reflection"@en .
+# 
+# http://alexdonkers.github.io/opt#RelativeHumidity
+<http://alexdonkers.github.io/opt#RelativeHumidity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://alexdonkers.github.io/opt#RelativeHumidity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://alexdonkers.github.io/opt#AmbientProperty> .
+<http://alexdonkers.github.io/opt#RelativeHumidity> <http://www.w3.org/2000/01/rdf-schema#label> "Relative humidity"@en .
+# 
+# http://alexdonkers.github.io/opt#SkinTemperature
+<http://alexdonkers.github.io/opt#SkinTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://alexdonkers.github.io/opt#SkinTemperature> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://alexdonkers.github.io/opt#PersonalProperty> .
+<http://alexdonkers.github.io/opt#SkinTemperature> <http://www.w3.org/2000/01/rdf-schema#label> "Skin temperature"@en .
+# 
+# http://alexdonkers.github.io/opt#SleepScore
+<http://alexdonkers.github.io/opt#SleepScore> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://alexdonkers.github.io/opt#SleepScore> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://alexdonkers.github.io/opt#PersonalProperty> .
+<http://alexdonkers.github.io/opt#SleepScore> <http://www.w3.org/2000/01/rdf-schema#label> "Sleep score"@en .
+# 
+# http://alexdonkers.github.io/opt#SleepStage
+<http://alexdonkers.github.io/opt#SleepStage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://alexdonkers.github.io/opt#SleepStage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://alexdonkers.github.io/opt#PersonalProperty> .
+<http://alexdonkers.github.io/opt#SleepStage> <http://www.w3.org/2000/01/rdf-schema#label> "Sleep stage"@en .
+# 
+# http://alexdonkers.github.io/opt#Temperature
+<http://alexdonkers.github.io/opt#Temperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://alexdonkers.github.io/opt#Temperature> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://alexdonkers.github.io/opt#AmbientProperty> .
+<http://alexdonkers.github.io/opt#Temperature> <http://www.w3.org/2000/01/rdf-schema#label> "Temperature"@en .
+# 
+# http://alexdonkers.github.io/opt#TemperatureVariation
+<http://alexdonkers.github.io/opt#TemperatureVariation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://alexdonkers.github.io/opt#TemperatureVariation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://alexdonkers.github.io/opt#AmbientProperty> .
+<http://alexdonkers.github.io/opt#TemperatureVariation> <http://www.w3.org/2000/01/rdf-schema#label> "Temperature variation"@en .
+# 
+# http://alexdonkers.github.io/opt#ThermalComfort
+<http://alexdonkers.github.io/opt#ThermalComfort> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://alexdonkers.github.io/opt#ThermalComfort> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://alexdonkers.github.io/opt#Comfort> .
+<http://alexdonkers.github.io/opt#ThermalComfort> <http://www.w3.org/2000/01/rdf-schema#label> "Thermal comfort"@en .
+# 
+# http://alexdonkers.github.io/opt#View
+<http://alexdonkers.github.io/opt#View> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://alexdonkers.github.io/opt#View> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://alexdonkers.github.io/opt#AmbientProperty> .
+<http://alexdonkers.github.io/opt#View> <http://www.w3.org/2000/01/rdf-schema#label> "View"@en .
+# 
+# http://alexdonkers.github.io/opt#VisualComfort
+<http://alexdonkers.github.io/opt#VisualComfort> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://alexdonkers.github.io/opt#VisualComfort> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://alexdonkers.github.io/opt#Comfort> .
+<http://alexdonkers.github.io/opt#VisualComfort> <http://www.w3.org/2000/01/rdf-schema#label> "Visual comfort"@en .
+# 
+# http://alexdonkers.github.io/opt#VisualPrivacy
+<http://alexdonkers.github.io/opt#VisualPrivacy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://alexdonkers.github.io/opt#VisualPrivacy> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://alexdonkers.github.io/opt#AmbientProperty> .
+<http://alexdonkers.github.io/opt#VisualPrivacy> <http://www.w3.org/2000/01/rdf-schema#label> "Visual privacy"@en .
+# 
+# http://alexdonkers.github.io/opt#Weight
+<http://alexdonkers.github.io/opt#Weight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://alexdonkers.github.io/opt#Weight> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://alexdonkers.github.io/opt#PersonalProperty> .
+<http://alexdonkers.github.io/opt#Weight> <http://www.w3.org/2000/01/rdf-schema#label> "Weight"@en .
+# 
+# https://w3id.org/ofo#Property
+<https://w3id.org/ofo#Property> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/ofo#PropertySet
+<https://w3id.org/ofo#PropertySet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://alexdonkers.github.io/opt#AcousticComfortPropertySet
+<http://alexdonkers.github.io/opt#AcousticComfortPropertySet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://alexdonkers.github.io/opt#AcousticComfortPropertySet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ofo#PropertySet> .
+<http://alexdonkers.github.io/opt#AcousticComfortPropertySet> <http://www.w3.org/2000/01/rdf-schema#comment> "A property set that can be used to group properties related to acoustic comfort."@en .
+<http://alexdonkers.github.io/opt#AcousticComfortPropertySet> <http://www.w3.org/2000/01/rdf-schema#label> "Acoustic comfort property set"@en .
+# 
+# http://alexdonkers.github.io/opt#AirQualityComfortPropertySet
+<http://alexdonkers.github.io/opt#AirQualityComfortPropertySet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://alexdonkers.github.io/opt#AirQualityComfortPropertySet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ofo#PropertySet> .
+<http://alexdonkers.github.io/opt#AirQualityComfortPropertySet> <http://www.w3.org/2000/01/rdf-schema#comment> "A property set that can be used to group properties related to air quality comfort."@en .
+<http://alexdonkers.github.io/opt#AirQualityComfortPropertySet> <http://www.w3.org/2000/01/rdf-schema#label> "Air quality comfort property set"@en .
+# 
+# http://alexdonkers.github.io/opt#ThermalComfortPropertySet
+<http://alexdonkers.github.io/opt#ThermalComfortPropertySet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://alexdonkers.github.io/opt#ThermalComfortPropertySet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ofo#PropertySet> .
+<http://alexdonkers.github.io/opt#ThermalComfortPropertySet> <http://www.w3.org/2000/01/rdf-schema#comment> "A property set that can be used to group properties related to thermal comfort."@en .
+<http://alexdonkers.github.io/opt#ThermalComfortPropertySet> <http://www.w3.org/2000/01/rdf-schema#label> "Thermal comfort property set"@en .
+# 
+# http://alexdonkers.github.io/opt#VisualComfortPropertySet
+<http://alexdonkers.github.io/opt#VisualComfortPropertySet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://alexdonkers.github.io/opt#VisualComfortPropertySet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ofo#PropertySet> .
+<http://alexdonkers.github.io/opt#VisualComfortPropertySet> <http://www.w3.org/2000/01/rdf-schema#comment> "A property set that can be used to group properties related to visual comfort."@en .
+<http://alexdonkers.github.io/opt#VisualComfortPropertySet> <http://www.w3.org/2000/01/rdf-schema#label> "Visual comfort property set"@en .
+# 
+# Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/
